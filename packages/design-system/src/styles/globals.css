@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@source "../**/*.{ts,tsx}";
+
+:root {
+  --color-background: var(--color-white);
+  --color-border: var(--color-neutral-200);
+}
+
+.dark {
+  --color-background: var(--color-neutral-800);
+  --color-border: var(--color-neutral-600);
+}
+
+@theme inline {
+  --font-sans: var(--font-pretendard);
+
+  --color-background: var(--color-background);
+  --color-border: var(--color-border);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background;
+  }
+}

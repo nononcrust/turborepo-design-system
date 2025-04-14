@@ -1,5 +1,5 @@
 {
-  "name": "design-system-monorepo-practice",
+  "name": "turborepo-design-system",
   "private": true,
   "scripts": {
     "build": "turbo run build",
